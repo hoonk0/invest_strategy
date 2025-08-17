@@ -23,6 +23,15 @@ app.add_middleware(
 def health():
     return {"ok": True}
 
+
+@app.get("/")
+def read_root():
+    return {
+        "message": "KRX Screener API is running 🚀",
+        "docs": "/docs",
+        "endpoints": ["/health", "/screen", "/status"]
+    }
+
 @app.get("/screen")
 def api_screen(
     date: Optional[str] = Query(None, description="YYYY-MM-DD 또는 YYYYMMDD (미지정시 기본값)"),
