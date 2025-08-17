@@ -1,0 +1,42 @@
+#홈페이지에서 API서비스 신청시 받은 Appkey, Appsecret 값 설정
+env: prod
+
+#실전투자
+my_app: "PSGgb8q7xytKxnDhvLRBVoqxMtaMvdedKXlP"
+my_sec: "nB69Fsu0kl5uS+/fb34BFyvBWOq8ighhoXk21J1XFnnOStLuF8RLGmCTGCoZ7+QDTQs0ZdRHTEHIBqHAHDMQAmKAh1CFwlajh8d0ehntOoAtGSq77jNOJdmXe7Gb0orQ11urP3eQ8TJbTuiYup5jwIqjyiscItGhI7EKbfYlejd2mfMDjCU="
+
+#모의투자
+paper_app: "PSLB6jwalqlluwOglRaeQfDWSuERe2YIpE9N"
+paper_sec: "q/YXQ7du/sTdhQ3TobYiBhJqn1iODBhU5JmlW8mYUUronVgW3ZsJAkOAGQx3xat8bNnmyp1vofc5q3VY+blotMwgl1yTZZC/P25OjWOlfwJNaLNEK9U0JuWQMbEnLmfAFxaa2xdcaXxAn+AtgYNcxEhdbZ4u8nn6MtclPrlob96ZVjOlGTk="
+
+# HTS ID
+my_htsid: "karlhkim"
+
+#계좌번호 앞 8자리
+my_acct_stock: "73667310"
+#my_acct_future: "선물옵션계좌 8자리"
+my_paper_stock: "50146178"
+#my_paper_future: "모의투자 선물옵션계좌 8자리"
+
+#계좌번호 뒤 2자리
+my_prod: "01" # 종합계좌
+# my_prod: "03" # 국내선물옵션계좌
+# my_prod: "08" # 해외선물옵션 계좌
+# my_prod: "22" # 개인연금
+# my_prod: "29" # 퇴직연금
+
+#domain infos
+prod: "https://openapi.koreainvestment.com:9443" # 서비스
+ops: "ws://ops.koreainvestment.com:21000" # 웹소켓
+vps: "https://openapivts.koreainvestment.com:29443" # 모의투자 서비스
+vops: "ws://ops.koreainvestment.com:31000" # 모의투자 웹소켓
+
+my_token: ""
+
+# User-Agent; Chrome > F12 개발자 모드 > Console > navigator.userAgent > 자신의 userAgent 확인가능
+my_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+
+order_tr_id_buy_market_real: "TTTT1002U"    # 미국 매수
+order_tr_id_sell_market_real: "TTTT1006U"   # 미국 매도
+order_tr_id_buy_limit_real: "TTTT1002U"     # 미국 지정가 매수
+order_tr_id_sell_limit_real: "TTTT1006U"    # 미국 지정가 매도
